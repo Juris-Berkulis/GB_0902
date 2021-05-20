@@ -1,12 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Контакты</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styles/style.css">
 </head>
 
 <body>
@@ -16,52 +16,42 @@
             <li><a href="contacts.html"><img src="img/contacts.svg" alt="contacts"></a></li>
         </ul>
     </div>
-    <div>
-        <div class="container container_center">
-            <h2 class="h2_header">Contact Us</h2>
-            <p class="text_p">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quibusdam, veniam.</p>
-        </div>
+    <div class="container container_center">
+        <h2 class="h2_header">Contact Us</h2>
+        <p class="text_p contacts_text_p">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quibusdam, veniam.</p>
     </div>
     <form action="#" class="container-2 cards">
         <div class="contacts-info">
-            <img src="img/contacts2.png" alt="Контакты">
-            <h4 class="h4_text">Address</h4>
-            <p class="text_p">Lorem ipsum dolor sit amet consectetur adipisicing.</p>
-            <h4 class="h4_text">Phone</h4>
-            <ul class="without-markers">
-                <li>Телефон 1: <a href="tel:+73335555555">+7(333)555-55-55</a></li>
-                <li>Телефон 2: <a href="tel:+79991234567">+7(999)123-45-67</a></li>
+            <img class="contacts-info__img" src="img/contacts2.png" alt="Контакты">
+            <h4 class="h4_text h4_text__address">Address</h4>
+            <p class="text_p text_p__address">Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+            <h4 class="h4_text h4_text__phone">Phone</h4>
+            <ul class="without-markers without-markers__phone">
+                <li class="without-markers__phone__item without-markers__phone__item-1"><a href="tel:+73335555555">+7(333)555-55-55</a></li>
+                <li class="without-markers__phone__item"><a href="tel:+79991234567">+7(999)123-45-67</a></li>
             </ul>
-            <h4>Online service</h4>
-            <ul class="without-markers">
-                <li>Ссылка на <a href="https://jsfiddle.net/" target="_blank">jsfiddle</a></li>
-                <li>Почта сервиса: <a href="mailto:my_mail@mail.ru">my_mail@mail.ru</a></li>
-                <li>Телефон сервиса: <a href="tel:+70680686868">+7(068)068-68-68</a></li>
+            <h4 class="h4_text__service">Online service</h4>
+            <ul class="without-markers without-markers__service">
+                <li class="without-markers__service__item without-markers__service__item-1"><a href="https://jsfiddle.net/" target="_blank">jsfiddle</a></li>
+                <li class="without-markers__service__item without-markers__service__item-2"><a href="mailto:my_mail@mail.ru">my_mail@mail.ru</a></li>
+                <li class="without-markers__service__item without-markers__service__item-3"><a href="tel:+70680686868">+7(068)068-68-68</a></li>
             </ul>
         </div>
         <div class="form">
-            <h4 class="h4_text">Send us message</h4>
-            <label for="Full-Name">Full Name: </label>
-            <br>
-            <input id="Full-Name" type="text" placeholder="ФИО" class="entry_field">
-            <br>
-            <label for="Email">Email: </label>
-            <br>
-            <input id="Email" type="email" placeholder="example@mail.ru" class="entry_field">
-            <br>
-            <label for="Message">Message: </label>
-            <br>
-            <textarea id="Message" placeholder="Введите текст" cols="35" rows="5" class="entry_field"></textarea>
-            <br>
-            <button type="submit" class="submit_button">submit</button>
+            <h4 class="h4_text form_h4_text">Send us message</h4>
+            <label class="form_label_name" for="Full-Name">Full Name: </label>
+            <input class="entry_field form_input_name" id="Full-Name" type="text" placeholder="ФИО">
+            <label class="form_label_email" for="Email">Email: </label>
+            <input class="entry_field form_input_email" id="Email" type="email" placeholder="example@mail.ru">
+            <label class="form_label_message" for="Message">Message: </label>
+            <textarea class="entry_field form_input_message" id="Message" placeholder="Введите текст" cols="35" rows="5"></textarea>
+            <button class="submit_button" type="submit">submit</button>
         </div>
     </form>
-    <br>
-    <br>
-    <div class="container-2">
+    <div class="container-2 map">
         <script type="text/javascript" charset="utf-8" async
-            src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A687f18c1216db6e7c8f9b02907692d77cca464ce3ca514378c7c7c63ab79882f&amp;width=100%25&amp;height=550&amp;lang=ru_RU&amp;scroll=true">
-            </script>
+            src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A687f18c1216db6e7c8f9b02907692d77cca464ce3ca514378c7c7c63ab79882f&amp;width=100%25&amp;height=100%25&amp;lang=ru_RU&amp;scroll=true">
+        </script>
     </div>
     <div class="footer">
         <div class="container">
